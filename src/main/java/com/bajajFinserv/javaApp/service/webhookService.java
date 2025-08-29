@@ -32,10 +32,7 @@ public class webhookService {
             Map<String, String> submitBody = new HashMap<>();
             submitBody.put("finalQuery", finalQuery);
 
-            HttpHeaders headers = new HttpHeaders();
-            headers.setContentType(MediaType.APPLICATION_JSON);
-            headers.set("Authorization", accessToken);
-
+            
             HttpEntity<Map<String, String>> entity = new HttpEntity<>(submitBody, headers);
 
 
