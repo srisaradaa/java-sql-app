@@ -13,8 +13,5 @@ public class appStartupRunner implements CommandLineRunner {
         this.webhookService = webhookService;
     }
 
-    @Override
-    public void run(String... args) {
-        webhookService.executeFlow();
-    }
+    
 }
